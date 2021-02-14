@@ -18,9 +18,23 @@ docker-compose up --build
 Results:
 ```
 Result object contains the analysis of har file.
-Please check below how to understand the result.
+Please see the below comments on how to understand the result.
+
 Lists of hosts: result.hostsKey
 Total request: result.count
 Total of different status code: result.statusCodeCount
 All requests that returned 500 and their body: result.erroneousResHost
+
+```
+
+Postman collection:
+
+```
+WiproTest.postman_collection.json
+```
+
+
+Sample HAR File:
+```
+sample.har
 ```
