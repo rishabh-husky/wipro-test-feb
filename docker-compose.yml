@@ -1,0 +1,17 @@
+version: "3"
+services:
+  har-parser-app:
+    build: .
+    command: npm run dev:watch
+    volumes:
+    - .:/app
+    - docker_nodemodules:/app/node_modules
+    environment:
+      REDIS_HOST: tcp-redis-server
+      REDIS_PORT: 6379
+    ports:
+      - "9010:3000"
+  tcp-redis-server:
+    image: "redis:alpine"
+volumes:
+  docker_nodemodules: {}
