@@ -8,7 +8,8 @@
     "build:watch": "npx typescript -w",
     "dev": "npx concurrently \"npm run build\" \"npm run dev:run\"",
     "dev:watch": "npx concurrently \"npm run build:watch\" \"npm run dev:run\"",
-    "dev:run": "npx nodemon dist/index.js -e js"
+    "dev:run": "npx nodemon dist/index.js -e js",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
